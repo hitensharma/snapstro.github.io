@@ -1,0 +1,561 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+
+
+/*Get rid of default padding and margin*/
+*{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+/*centering website*/
+.container{
+	width:auto;
+	margin:0em auto;
+	font-style:none;
+}
+
+
+.clear{
+	clear:both;
+}
+
+
+.top_header{
+	/*background-image:url(..//images/banner.jpg);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-color:#2c3e50;*/
+	background-color:#1A1F2B;
+	margin-right:6em;
+	padding:0em 0em 0em 1.2em;
+	float:left;
+	height:auto;
+}
+
+
+.top_header .heading a{
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+	font-family: 'cabin Sketch', cursive;
+	text-align:left;
+	margin:0em .2em 0em.2em;
+	font-size: 1.8em;
+	display: inline-block;
+}
+
+
+.top_header .heading a:hover{
+	color:#85A6CC;
+	border-bottom:none;
+	transition:all 0.2s ease-in 10ms;
+}
+
+
+.top_header .heading a:hover{
+	background-color:#1A1F2B;
+	color:#85A6CC;
+}
+
+
+.top_header .heading a:hover{
+	background-color:none;
+}
+
+
+
+.top_nav li:hover ul{
+	display:block;
+}
+
+
+/* Menu style */
+
+ul.wtf-menu{
+	margin:0%;
+	color: #737373;
+	padding:1em 0em 0.2em 2em;
+	border-radius: 0px;
+	display:inline-block;
+	position:relative;
+	width:auto;
+	height:auto;
+	font-weight:normal;
+	z-index:9999;
+	/*background-color:#2c3e50;
+	*/
+	background:#1A1F2B;
+	border:none;
+	/*font:1em calibri;*/
+	font-size:.9em;
+	font-family: "Raleway", sans-serif;
+}
+
+ul .wtf-menu.active{
+  color: #c4c4c4;
+	
+}
+
+ul.wtf-menu li{
+	list-style: none;
+	float: left;
+	padding: 1px 0px;
+	margin: 1px 1px;
+	line-height: 50px;
+	position: relative;
+/*	text-transform: uppercase;*/
+	display:block;
+	cursor: pointer;
+	
+}
+
+
+ul .wtf-menu ul:after{
+	content:".";
+	display:block;
+	height:0em;
+	clear:both;
+	visibility:hidden;
+}
+
+
+ul.wtf-menu li a{
+	
+	text-decoration:none;
+	color: #FFF;
+	padding: 0em 2em .5em 2em;
+	margin: 0px 0px;
+	display: block;
+}
+
+ul.wtf-menu li a:hover{
+	color:#85A6CC;
+	
+	/*
+	color:#85A6CC;
+	padding-bottom:0em;
+	border-top:0.1em solid #85A6CC;
+	transition:all 0.2s ease-in 250ms;*/
+}
+
+ul.wtf-menu li a::before {
+	content:'';
+	display:block;
+	height:2.2px;
+	width:100%;
+	background-color:#85A6CC;
+	position:absolute;
+	top:0;
+	width:0%;
+	transition:all ease-in-out 250ms;
+}
+
+ul.wtf-menu li a:hover::before{
+	width:70%;
+}
+
+
+.wtf-menu ul.submenu{
+	width: 13em;
+	background: #fff;
+	position: absolute;
+	
+	border-radius: 0px;
+	
+	border:none;
+	top:50px;
+	left:0px;
+	display:none;
+	
+}
+
+.wtf-menu ul.submenu ul{
+	left: 180px;
+	top:0px;
+	border:none;
+}
+
+.wtf-menu ul.submenu li{
+	margin: 0px;
+	display: block;
+	float: none;
+	line-height: 40px;
+	text-transform: none;
+	background:#1A1F2B;
+	color:#fff;
+	border:none;
+}
+
+.wtf-menu ul.submenu li:last-child{
+	border:0.1em solid #1A1F2B;
+	border-radius:0 0 0px 0px;	
+}
+
+
+/* Add arrows */
+
+ul.wtf-menu li.parent a{
+	
+	padding: 0em 2em .5em 2em;
+	border:none;
+	
+}
+
+ul.wtf-menu li.parent:after{
+	font-family: "Raleway", sans-serif;
+	content:""/*"\f0d7"*/;
+	color: #FFF;
+	position: absolute;
+	right: 0px;
+	top:0px;
+	border:none;
+	margin-left: 0px;
+}
+
+ul.wtf-menu ul li.parent:after{
+	font-family: "Raleway", sans-serif;
+	content: ""/*"\f0da"*/;
+	color:#999;
+	position: absolute;
+	right: 0px;
+	top:0px;
+	border:none;
+	margin-left: 0px;
+}
+
+
+
+
+
+
+
+/* menu-5 */
+
+.menu-5{
+	width:100%;
+	background-color:#1A1F2B;
+	padding:0px;
+}
+
+.menu-5 .wtf-menu li:hover > ul{
+	display: block;
+	-moz-animation: flipInX .3s ease-in;
+    -webkit-animation: flipInX .3s ease-in ;
+    animation: flipInX .3s ease-in;
+	
+	border:none;
+   
+
+}
+
+.menu-5 .wtf-menu ul li:hover > ul{
+	display:block;
+	-moz-animation: flipInY .3s ease-in ;
+    -webkit-animation: flipInY .3s ease-in ;
+    animation: flipInY .3s ease-in;
+	border:none;
+}
+
+
+/*
+
+.menutoggle{
+	padding:1em;
+	position:absolute;
+	right:.75em;
+	top:.75em;
+	cursor:pointer;
+	z-index:999;
+}
+
+.hamburger, .hamburger::before, .hamburger::after{
+	background:#EBEBD3;
+	height:3px;
+	width:1.75em;
+	border-radius:3px;
+}
+
+.hamburger::before{
+	tranfsform:translateY(-6px);
+}
+
+
+.hamburger::before{
+	tranfsform:translateY(4px);
+}
+*/
+
+
+@media screen and (max-width:1010px){
+		
+.top_header{
+	padding:0em 1.0em 0em 1em;
+	height:auto;
+}
+
+
+.top_header .heading a{
+	color:#ffffff;
+	text-decoration:none;
+	font-size:1.4em;
+	font-family: 'cabin Sketch', cursive;
+	text-align:left;
+	margin:0.2em .2em 0em .2em;
+}
+
+
+.top_header .heading a:hover{
+	color:#85A6CC;
+	border-bottom:none;
+	transition:all 0.2s ease-in;
+}
+
+
+
+
+
+
+/* Menu style */
+
+ul.wtf-menu{
+	padding:0.4em 0em 0.2em .8em;
+	font:0.7em;
+	font-family: "Raleway", sans-serif;
+}
+
+ul.wtf-menu li a{
+	
+	text-decoration:none;
+	color: #FFF;
+	padding: 0em 1em .5em 1.0em;
+}
+
+.wtf-menu ul.submenu{
+	width: 12em;
+}
+
+.wtf-menu ul.submenu ul{
+	left: 150px;
+}
+	
+}
+
+@media screen and (max-width:650px){
+	
+.top_header{
+	padding:0.2em 1.0em .2em 1.2em;
+	height:auto;
+}
+
+
+.top_header .heading a{
+	color:#ffffff;
+	text-decoration:none;
+	font-size:1.4em;
+	font-family: 'cabin Sketch', cursive;
+	text-align:left;
+	margin:.2em .2em 0em .2em;
+}
+
+
+.top_header .heading a:hover{
+	color:#85A6CC;
+	border-bottom:none;
+	transition:all 0.2s ease-in;
+}
+
+
+
+
+
+
+/* Menu style */
+
+ul.wtf-menu{
+	padding:1em 0em 0.8em 1.2em;
+	font:0.9em;
+	font-family: "Raleway", sans-serif;
+}
+
+ul.wtf-menu li a{
+	
+	text-decoration:none;
+	color: #FFF;
+	padding: 0em 1.6em .5em 1.0em;
+}
+
+.wtf-menu ul.submenu{
+	width: 12em;
+}
+
+.wtf-menu ul.submenu ul{
+	left: 150px;
+}	
+}
+
+
+
+@media screen and (max-width:630px){
+
+.top_header .heading a{
+	font-size:1.5em;
+	margin:.2em .2em 0em .2em;
+}
+
+
+/* Menu style */
+
+ul.wtf-menu{
+	padding:1em .5em 0.8em .5em;
+	display:inline-block;
+	position:relative;
+	font:0.8em;
+	
+	/* 	Dropdown shadow */
+	-webkit-box-shadow: 0 0em 0em 0 rgba(0,0,0,0);
+	box-shadow: 0 0em 0em 0 rgba(0,0,0,0);
+}
+ul.wtf-menu li{
+	line-height: 50px;
+	position: relative;
+	display:block;
+	cursor: pointer;
+	
+}
+
+ul.wtf-menu li a{
+	padding: 0em 1.2em .1em 1.2em;
+	margin: 0px 0px;
+	display: block;
+	position:relative;
+	z-index:9999;
+}
+
+ul.wtf-menu li a:hover{
+	
+	border-bottom:0em solid #85A6CC;
+	transition:all 0.2s ease-in;
+}
+
+.wtf-menu ul.submenu{
+	width: 12em;
+	position: absolute;
+	
+	border:none;
+	top:50px;
+	left:0px;
+	display:none;
+	
+	/* 	Dropdown shadow */
+	-webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
+	box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
+}
+
+.wtf-menu ul.submenu ul{
+	left: 190px;
+	top:0px;
+	border:none;
+}
+
+.wtf-menu ul.submenu li{
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	float: none;
+	border-bottom: 1px solid #eee;
+	line-height: 40px;
+	text-transform: none;
+	background:#1A1F2B;
+	color:#fff;
+	border:none;
+}
+
+.wtf-menu ul.submenu li:last-child{
+	border: none;
+}
+
+
+/* Add arrows */
+
+ul.wtf-menu li.parent a{
+	
+	padding: 0em 2em .5em 2em;
+	border:none;
+	
+}
+
+ul.wtf-menu li.parent:after{
+	content:"";
+	position: relative;
+	right: 0px;
+	z-index:9999;
+	top:0px;
+	border:none;
+	margin-left: 0px;
+}
+
+ul.wtf-menu ul li.parent:after{
+	content: "";
+	position: relative;
+	right: 0px;
+	z-index:9999;
+	top:0px;
+	border:none;
+	margin-left: 0px;
+}
+
+
+
+
+
+
+
+/* menu-5 */
+
+.menu-5 .wtf-menu li:hover > ul{
+	display: none;
+	border:none;
+}
+
+.menu-5 .wtf-menu ul li:hover > ul{
+	display:none;
+	border:none;
+}
+
+
+	
+	
+}
+
+
+
+
+@media screen and (max-width:350px){
+	
+	
+
+.top_header{
+	padding:0.2em .2em 0em 2em;
+	
+	text-align:center;
+}
+
+
+.top_header .heading a{
+	font-size:1.4em;
+	text-align:center;
+	
+}
+	
+	
+.wtf-menu ul.submenu li{
+		display:none;
+}
+	
+
+	
+}
+

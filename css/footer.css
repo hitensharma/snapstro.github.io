@@ -1,0 +1,218 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	bottom:0;
+	padding: 55px 50px;
+	margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+
+.footer-distributed h3 a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.footer-distributed h3 a:hover{
+	color:#85A6CC;
+	border-bottom:none;
+	transition:all 0.2s ease-in 10ms;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	font-weight:0;
+}
+
+.footer-distributed .footer-links a:hover{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  #85A6CC;
+}
+
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 0.96em;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-company-name a:hover{
+	color:#bababa;
+	text-decoration:none;
+}
+
+.footer-company-name a{
+	text-align:center;
+	text-decoration:none;
+	color:#33FF33;
+	font-size:1em ;
+	font-family: "Raleway", sans-serif;
+	margin:0px 0px 0px 0px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	font-weight: 50%;
+	font-family: "Raleway", sans-serif;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	line-height:2;
+	font-family: "Raleway", sans-serif;
+	font-size: 15px;
+	font-weight:0;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+	}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-icons a:hover{
+	background-color:#00cdcd;
+}
+
+/*  media queries for responsive footer*/
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}

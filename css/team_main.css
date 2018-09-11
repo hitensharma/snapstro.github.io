@@ -1,0 +1,176 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+
+.team_box{
+	width:auto;
+	padding:2% 0%;	
+	margin:0%;
+	height:25em;
+	padding-bottom:6em;
+	
+	
+	
+		background-color: #000;
+		background-image: url("../photos/team_portfolio.jpg");
+		background-size: cover;
+		background-position: top center;
+}
+
+.team_heading{
+	font-family: "Raleway", sans-serif;
+	font-size:3em;
+	color:#fff;
+	text-align:center;
+	padding:0em 0em 0em 0em;
+	font-weight:normal;
+}
+
+.team_subbox{
+	width:100%;
+}
+
+.team{
+	float:left;
+	border:solid 0em white;
+	border-radius:0%;
+	padding:0%;
+	text-align:center;
+	margin:4.0% 1.0% 1.0% 1.0%;
+	width:22%;
+	height:auto;
+	box-sizing:border-box;
+}
+
+.team img{
+	display:block;
+	position:relative;
+	transition: all .2s ease-in-out;
+	-webkit-border-radius:999px;
+	-moz-border-radius:999px;
+	-ms-border-radius:999px;
+	border-radius:999px;
+	text-align:center;
+	height:180px;
+	width:180px;
+	margin:auto;
+}
+
+.team:hover img{
+	opacity:.8;
+	transform:scale(.96);
+}
+
+.team img:hover{
+	opacity:1;
+	transform:scale(1);
+	box-shadow:0 0 15px rgba(0,0,0,.5);
+}
+
+.team_name{
+	font-size:1.2em; 
+	font-family: "Raleway", sans-serif;
+	color:#fff/*#3366cc*/;
+	padding:4% 0% 0% 0%;
+	text-decoration:none;
+	text-align:center;
+	opacity:1;
+}
+
+.team a{
+	border:solid 0em white;
+	text-decoration:none;
+}
+
+
+@media screen and (max-width:1120px){
+	
+	.team_box{
+	width:auto;
+	padding:2% 1%;
+}
+
+.team_heading{
+	font-size:3.0em;
+}
+
+.team{
+	margin:4.0% 1.0% 1.0% 1.0%;
+	width:22%;
+	height:auto;
+}
+
+.team img{
+	height:160px;
+	width:160px;
+}
+
+
+.team_name{
+	font-size:1.2em;
+}
+
+}
+
+
+@media screen and (max-width:880px){
+	
+	.team_box{
+	width:auto;
+	padding:2% 1%;
+}
+
+.team_heading{
+	font-size:3.0em;
+}
+
+.team{
+	margin:4.0% 1.0% 1.0% 1.0%;
+	width:23%;
+	height:auto;
+}
+
+.team img{
+	height:140px;
+	width:140px;
+}
+
+
+.team_name{
+	font-size:1.1em;
+}
+	
+}
+
+
+@media screen and (max-width:600px){
+	
+	.team_box{
+	width:auto;
+	padding:2% 1%;
+	padding-bottom:10em;
+}
+
+.team_heading{
+	font-size:2.5em;
+	padding-bottom:0.5em;
+}
+
+.team{
+	margin:4.0% 1.0% 1.0% 1.0%;
+	width:44%;
+	height:auto;
+}
+
+.team img{
+	height:120px;
+	width:120px;
+}
+
+
+.team_name{
+	font-size:1em;
+}
+
+	
+}
+
